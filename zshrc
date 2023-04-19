@@ -1,10 +1,10 @@
-ZSH=$HOME/.oh-my-zsh
+ZSH=$HOME/.oh-my-zshs
 
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="robbyrussell"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search)
+plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search ssh-agent)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -70,3 +70,6 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+sudo /etc/init.d/postgresql start
+export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+export GH_BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
